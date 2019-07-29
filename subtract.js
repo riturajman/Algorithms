@@ -3,7 +3,7 @@
 
 
 function subtract(x, y){
-let a = 0, b = 0;
+let a = 0;
 if(x >= y){
     for(i = y; i < x; i++){
         a++
@@ -12,9 +12,9 @@ if(x >= y){
 }
 else{
     for(i = x; i < y; i++){
-        b++
+        a++
     }
-    console.log(String.fromCharCode(45) + b)
+    console.log(String.fromCharCode(45) + a)
 }}
 
 subtract(5, 5)

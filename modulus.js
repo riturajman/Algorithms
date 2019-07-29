@@ -4,6 +4,9 @@ function modulus(x, y) {
   if(x == 0 || y == 0){
       console.log("NaN")
   }
+  else if(processing(Math.abs(x), Math.abs(y)) === 0){
+    console.log(0)
+  }
   else if(x > 0){
       console.log(processing(x, Math.abs(y)))
   }
@@ -21,4 +24,5 @@ function processing(x, y) {
     }
   }
 }
-modulus(22, 4);
+modulus(20, 3)
+modulus(-22, -1);
