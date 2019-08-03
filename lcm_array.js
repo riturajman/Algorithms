@@ -1,23 +1,25 @@
+//algorithm to find the LCM of an array
 function lcmarr(array) {
-  let x = array[0];
+  let bigNum = array[0];
   for (i = 0; i < array.length; i++) {
-    if (x < array[i]) {
-      x = array[i];
+    if (bigNum < array[i]) {
+      bigNum = array[i];
     }
-    multiply(x, array, 0, 1);
   }
+return multiply(bigNum, array, 0, 1);
 }
 
-function multiply(x, array, a, y) {
-  if (a == array.length) {
-    return (x * y);
+function multiply(bigNum, array, arrNum, mult) {
+  if (arrNum == array.length) {
+    return (bigNum * mult);
   } 
-  else if ((x * y) % array[a] == 0) {
-    multiply(x, array, a++, y);
+  else if ((bigNum * mult) % array[arrNum] == 0) {
+    multiply(bigNum, array, ++arrNum, mult);
   } 
   else {
-    multiply(x, array, 0, y++);
+  
+  multiply(bigNum, array, arrNum, ++mult);
   }
 }
 
-lcmarr([3, 5, 6]);
+console.log(lcmarr([3, 5, 6, 4, 25]));
