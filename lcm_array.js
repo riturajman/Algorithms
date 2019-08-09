@@ -6,12 +6,12 @@ function lcmarr(array) {
       bigNum = array[i];
     }
   }
-return multiply(bigNum, array, 0, 1);
+multiply(bigNum, array, 0, 1);
 }
 
 function multiply(bigNum, array, arrNum, mult) {
   if (arrNum == array.length) {
-    return (bigNum * mult);
+    console.log(bigNum * mult);
   } 
   else if ((bigNum * mult) % array[arrNum] == 0) {
     multiply(bigNum, array, ++arrNum, mult);
@@ -22,4 +22,4 @@ function multiply(bigNum, array, arrNum, mult) {
   }
 }
 
-console.log(lcmarr([3, 5, 6, 4, 25]));
+lcmarr([3, 5, 6, 4, 25]);
