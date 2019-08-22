@@ -24,7 +24,6 @@ function check(x, y){
         return false}
     }
     }
-}
 
 
 

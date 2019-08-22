@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\lcm_array.js"
+            "program": "${workspaceFolder}\\median_array.js"
         }
     ]
 }
