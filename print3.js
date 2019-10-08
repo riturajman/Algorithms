@@ -6,9 +6,9 @@
 
 //takes in an array and adds its reverse to the end
 //input -> 123 ; oputput -> 123321
-printReverse = (arr)=>{
+printReverse = (arr) => {
     newArr = [arr]
-    for(i= 3; i >= 0; i--){
+    for (i = 3; i >= 0; i--) {
         newArr.push(arr[i])
     }
     console.log(newArr.join(''))
