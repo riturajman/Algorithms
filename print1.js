@@ -5,9 +5,9 @@
 //12
 //1
 
-print= (x)=>{
+print = (x) => {
     arr = []
-    for(i= 1; i <= x; i++){
+    for (i = 1; i <= x; i++) {
         arr.push(i)
     }
     console.log(arr.join(''))
